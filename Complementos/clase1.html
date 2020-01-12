@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Var,let y const</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      nicole = {
+        edad: 20
+      }
+      function esMayorDeEdad(persona) {
+        if (persona.edad > 18) {
+          var mensaje = 'Es mayor de edad'
+        }
+        else {
+          var mensaje = 'Es menor de edad'
+        }
+        console.log(mensaje)
+      }
+      esMayorDeEdad(nicole)
+
+    </script>
+  </body>
+</html>

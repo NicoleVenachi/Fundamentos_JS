@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memorización</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // Factorial. Caso base es llegar a 1
+      // guardar en memoria para ahorrar com[uto, como en el caso del factorial de 12! que usa el de 6!
+      function factorial(n) {
+        if (!this.cache) {
+          this.cache = {}
+        } else {
+        } //no existe cache
+        debugger
+        if (this.cache[n]) {
+          return this.cache[n]
+        } else {
+        } // ya existe esse dato
+        // Operación factorial
+        if (n == 1) {
+          return 1
+        }
+        else {
+          return this.cache[n] = (n * factorial(n - 1))
+          debugger
+          return
+        }
+      }
+    </script>
+  </body>
+</html>

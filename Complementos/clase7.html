@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cambiando contexto</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const sacha = {
+        nombre: 'Sacha',
+        apellido: 'Lifszyc'
+      }
+      function saludar(saludo) {
+        console.log(`${saludo}, mi nombre es ${this.nombre}`)
+      }
+      const saludarSacha = saludar.bind(sacha)
+      saludar.call(sacha, 'Hola perro')
+      saludar.apply(sacha, ['Hola perro'])
+    </script>
+  </body>
+</html>
